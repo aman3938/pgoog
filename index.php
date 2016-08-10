@@ -1,7 +1,7 @@
 <?php
 $notDirect = 1;
 include_once './utility/utilityFunctions.php';
-
+include_once './model/database.php';
 session_start();
 $page  = isset($_GET['page'])?$_GET['page']:"";
 
@@ -16,3 +16,4 @@ switch($page){
         isLoggedIn();
         include_once('./controller/dashboard.php');
 }
+closeConnection();

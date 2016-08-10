@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
+body{
+font-family:lato, sans-serif;
+font-weight: 300;
+font-size: 16px;
+}
+.info{
+    padding:35px;
+}
+.analyze{
+    line-height: 2;
+}
+.menu a{
+    color:#333;
+}
+.log{
+   padding-top:35px; 
+}
+.put{
+    padding-top: 7px;
+}
+.exit{
+padding-top:25px;
+
+}
+li{
+ float:right;
+ list-style-type: none;
+
+ 
+}

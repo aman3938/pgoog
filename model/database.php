@@ -1,8 +1,9 @@
 <?php
+$connectionId = mysqli_connect('localhost','root','mannat');
+mysqli_select_db($connectionId, 'myapp');
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
+function closeConnection(){
+    
+mysqli_close($connectionId);
+}
