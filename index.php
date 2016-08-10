@@ -16,4 +16,4 @@ switch($page){
         isLoggedIn();
         include_once('./controller/dashboard.php');
 }
-closeConnection();
+closeConnection($connectionId);
