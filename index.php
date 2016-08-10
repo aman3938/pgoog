@@ -1,8 +1,18 @@
 <?php
+$notDirect = 1;
+include_once './utility/utilityFunctions.php';
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+session_start();
+$page  = isset($_GET['page'])?$_GET['page']:"";
 
+switch($page){
+    case 'login':
+        include_once('./templates/login.php');
+        break;
+    case 'processLogin':
+        include_once('./controller/processLogin.php');
+        break;
+    default:
+        isLoggedIn();
+        include_once('./controller/dashboard.php');
+}
