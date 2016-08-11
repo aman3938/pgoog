@@ -5,5 +5,5 @@ mysqli_select_db($connectionId, 'myapp');
 
 function closeConnection(){
     
-mysqli_close($connectionId);
+    mysqli_close($connectionId);
 }
