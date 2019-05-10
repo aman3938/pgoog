@@ -1,4 +1,5 @@
 <?php
+//this was done in 2016
 $connectionId = mysqli_connect('localhost','root','mannat');
 mysqli_select_db($connectionId, 'myapp');
 

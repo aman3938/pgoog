@@ -1,5 +1,5 @@
 <?php
-
+//this was done in 2016
 ($notDirect) or die("You can't access this page");
 
 include_once './model/database.php';
